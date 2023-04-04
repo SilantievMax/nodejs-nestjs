@@ -1,4 +1,8 @@
-import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger'
+import {
+  ApiOperation,
+  ApiResponse,
+  ApiTags
+} from '@nestjs/swagger'
 import { Body, Controller, Post } from '@nestjs/common'
 import { CreateUserDto } from 'src/users/dto/create-user.dto'
 import { AuthService } from './auth.service'
