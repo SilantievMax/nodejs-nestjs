@@ -12,11 +12,7 @@ import { Post } from 'src/posts/posts.model'
 @Module({
   controllers: [UsersController],
   providers: [UsersService],
-  imports: [
-    SequelizeModule.forFeature([User, Role, UserRoles, Post]),
-    RolesModule,
-    forwardRef(() => AuthModule)
-  ],
+  imports: [SequelizeModule.forFeature([User, Role, UserRoles, Post]), RolesModule, forwardRef(() => AuthModule)],
   exports: [UsersService]
 })
 export class UsersModule {}
